@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table border="none" border="grey" align="center" width="400px" height="500px">
+            <h2 align="center" style="color: cornflowerblue; " > Calculator App</h2>
+            <tr align="center">
+                <td colspan="4" height='60px' >
+                    <input type="text" id="input" value="0">
+                </td>
+            </tr>
+        <tr align="center">
+            <td id='opr' onclick="inpVal('%')">%</td>
+            <td id='opr' onclick="inpVal('C')" value=0>C</td>
+            <td id='opr' onclick="inpVal('x^2')" >x <sup>2</sup></td>
+            <td id='opr' onclick="inpVal('/')">/</td>
+        </tr>
+        <tr align="center">
+            <td id="all" onclick="inpVal('7')">7</td>
+            <td id="all" onclick="inpVal('8')">8</td>
+            <td id="all" onclick="inpVal('9')">9</td>
+            <td id='opr' onclick="inpVal('*')">*</td>
+        </tr>
+
+        <tr align="center">
+            <td id="all" onclick="inpVal('4')">4</td>
+            <td id="all" onclick="inpVal('5')">5</td>
+            <td id="all" onclick="inpVal('6')">6</td>
+            <td id='opr' onclick="inpVal('-')">-</td>
+        </tr>
+        <tr align="center">
+            <td id="all" onclick="inpVal('1')">1</td>
+            <td id="all" onclick="inpVal('2')">2</td>
+            <td id="all" onclick="inpVal('3')">3</td>
+            <td id='opr' rowspan="2" onclick="inpVal('+')">+</td>
+        </tr>
+        <tr align="center">
+            <td id="all" onclick="inpVal('0')">0</td>
+            <td id="all" onclick="inpVal('.')"><b>.</b></td>
+            <td id='equal' onclick="inpVal('=')">=</td>
+        </tr>
+    </table>
+</body>
+<script src="app.js"></script>
+</html>
